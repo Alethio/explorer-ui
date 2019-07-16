@@ -39,4 +39,7 @@ storiesOf("_root", module)
     .addParameters({ info: { disable: true }})
     .add("default", () => <div>Select a story from the sidebar to begin</div>);
 
-configure(loadStories, module);
+// setTimeout to allow time for the stories to load, otherwise we get errors on HMR
+setTimeout(() =>
+    configure(loadStories, module), 1000
+);
