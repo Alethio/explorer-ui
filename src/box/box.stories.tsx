@@ -74,7 +74,7 @@ storiesOf("boxes", module)
             </LayoutRow>
             <LayoutRow>
                 <LayoutRowItem>
-                    <Label>Other</Label>
+                    <Label>Block size</Label>
                     <BlockSizeBox bytes={20000} locale="en-US" translations={{bytes: "bytes"}} />
                 </LayoutRowItem>
             </LayoutRow>
