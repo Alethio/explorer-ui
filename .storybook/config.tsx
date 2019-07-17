@@ -18,9 +18,21 @@ addDecorator(withInfo({
 }));
 addDecorator(storyFn => <Cms
     config={{
-        pluginsBaseUrl: "",
-        plugins: {},
-        pages: [],
+        // TODO: pass via env
+        pluginsBaseUrl: "https://s3.amazonaws.com/blockexplorer/plugins",
+        plugins: {
+            "plugin://aleth.io/eth-common?v=2.1.1": {}
+        },
+        pages: [{
+            def: "page://aleth.io/block",
+            children: {}
+        }, {
+            def: "page://aleth.io/tx",
+            children: {}
+        }, {
+            def: "page://aleth.io/account",
+            children: {}
+        }],
         rootModules: {}
     }}
     theme={createTheme(createPalette())}
