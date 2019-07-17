@@ -36,7 +36,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      - run: npm run storybook-dist
+      - run: STORYBOOK_EXPLORER_PLUGINS_URL=$STORYBOOK_EXPLORER_PLUGINS_URL npm run storybook-dist
       - persist_to_workspace:
           root: .
           paths:
