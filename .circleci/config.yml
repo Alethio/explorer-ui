@@ -1,17 +1,86 @@
 version: 2
+
+references:
+  executor_config: &executor_config
+    docker:
+      - image: circleci/node:10.16
+
 jobs:
-  build:
-    docker: # run the steps with Docker
-      - image: circleci/node:10
-    steps: # a collection of executable commands
-      - checkout # special step to check out source code to working directory
-      - restore_cache: # special step to restore the dependency cache
-          # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: run-npm-install
-          command: npm install
-      - save_cache: # special step to save the dependency cache
-          key: dependency-cache-{{ checksum "package.json" }}
+  setup:
+    <<: *executor_config
+    steps:
+      - checkout
+      - restore_cache:
+          key: npm-cache-{{ checksum "package.json" }}
+      - run: npm install --ignore-scripts
+      - save_cache:
+          key: npm-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  build:
+    <<: *executor_config
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: build
+          command: npm run build
+  docs-build:
+    <<: *executor_config
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: npm run storybook-dist
+      - persist_to_workspace:
+          root: .
+          paths:
+            - storybook-dist
+  docs-deploy:
+    <<: *executor_config
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Install and configure gh-pages
+          command: |
+            sudo npm i -g gh-pages@2.0.1
+            git config user.email "ci-build@aleth.io"
+            git config user.name "ci-build"
+      - add_ssh_keys:
+          fingerprints:
+            - "83:34:59:1c:8f:b7:2b:40:b1:7d:7b:7e:58:07:2d:d7"
+      - run:
+          name: Fix-up fonts.css for sub-path deployment
+          command: sed -i.bak "s/\/fonts/..\/fonts/" storybook-dist/css/fonts.css
+      - run:
+          name: Deploy with gh-pages
+          command: gh-pages -d storybook-dist -m 'gh deploy [ci skip]'
+
+workflows:
+  version: 2
+  build-test-and-deploy-docs:
+    jobs:
+      - setup
+      - build:
+          requires:
+            - setup
+      - docs-build:
+          requires:
+            - setup
+      - docs-deploy:
+          requires:
+            - build
+            - docs-build
+          filters:
+            branches:
+              only:
+                - master
+                # TODO removeme
+                - storybook
