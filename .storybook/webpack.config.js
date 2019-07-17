@@ -48,6 +48,11 @@ module.exports = ({ config }) => {
         config.module.rules.splice(esLintLoaderIndex, 1);
     }
 
+    let babelLoaderIndex = config.module.rules.findIndex(r => r.loader && r.loader.match(/babel-loader/))
+    if (babelLoaderIndex !== -1) {
+        config.module.rules.splice(babelLoaderIndex, 1);
+    }
+
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
 };
