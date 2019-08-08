@@ -1,5 +1,5 @@
 import { observable } from "mobx";
-import { IStorage } from "./IStorage";
+import { IStorage } from "../util/storage/IStorage";
 
 export class CookieBannerState {
     @observable
