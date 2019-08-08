@@ -1,6 +1,6 @@
 {
   "name": "@alethio/explorer-ui",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "React components usable by Alethio Explorer plugins",
   "scripts": {
     "build": "npm run clean && tsc -p ./tsconfig.build.json && npm run lint",
