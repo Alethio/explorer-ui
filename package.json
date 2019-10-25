@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@alethio/cms": "^1.0.0-beta.4",
-    "@alethio/ui": "^1.0.0-beta.11",
+    "@alethio/ui": "^1.0.1",
     "@storybook/addon-info": "^5.1.9",
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addon-storysource": "^5.1.9",
