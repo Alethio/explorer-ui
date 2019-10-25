@@ -188,6 +188,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/src/grid/dataRenderer/dataRenderer.stories.d.ts"
   },
   {
+    "revision": "aa9067e5968250589754716c254aa955",
+    "url": "../lib/src/grid/dataRenderer/tx/TransferDirectionRenderer.d.ts"
+  },
+  {
     "revision": "bcc2f51f60846550d65d496180f175a5",
     "url": "../lib/src/grid/dataRenderer/tx/TxLinkRenderer.d.ts"
   },
@@ -232,56 +236,56 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/src/util/storage/IStorage.d.ts"
   },
   {
-    "url": "10.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "10.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "11.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "11.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "12.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "12.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "13.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "13.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "14.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "14.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "3.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "3.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "4.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "4.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "5.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "5.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "6.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "6.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "7.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "7.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "8.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "8.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "9.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "9.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "revision": "45a67acf3683a53431883457722ea308",
+    "revision": "e55000d6f45dbd1461b3c9051001a20e",
     "url": "iframe.html"
   },
   {
-    "url": "main.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "main.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "runtime~main.619ce1eabe43dcdeeab0.bundle.js"
+    "url": "runtime~main.f0803890008a25db1bfa.bundle.js"
   },
   {
-    "url": "vendors~main.619ce1eabe43dcdeeab0.bundle.js"
-  },
-  {
-    "revision": "696764e6eb8f4f2b229d",
+    "revision": "dec132740825985e8196",
     "url": "vendors~main.css"
+  },
+  {
+    "url": "vendors~main.f0803890008a25db1bfa.bundle.js"
   }
 ]);
