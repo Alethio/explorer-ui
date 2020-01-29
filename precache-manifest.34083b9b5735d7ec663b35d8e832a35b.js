@@ -4,6 +4,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/.storybook/config.d.ts"
   },
   {
+    "revision": "2ac5553028d47d49aebec58544831e96",
+    "url": "../lib/node_modules/@alethio/ui/src/layout/Bar.d.ts"
+  },
+  {
+    "revision": "01b1b9aa36597ae8bf12e0b49fa179c6",
+    "url": "../lib/node_modules/@alethio/ui/src/layout/Spacer.d.ts"
+  },
+  {
+    "revision": "73f2e538a9e29df936291bce981f5181",
+    "url": "../lib/node_modules/@alethio/ui/src/layout/VerticalBar.d.ts"
+  },
+  {
+    "revision": "fc58fd51c878aaca41ee7e34f8e0a974",
+    "url": "../lib/node_modules/@alethio/ui/src/layout/content/box/IBoxColors.d.ts"
+  },
+  {
+    "revision": "887a069d3da7ae5eb65585fefef00979",
+    "url": "../lib/node_modules/@alethio/ui/src/layout/content/box/IBoxMetrics.d.ts"
+  },
+  {
+    "revision": "3c14fe5a461a73addac436dd89c41a50",
+    "url": "../lib/node_modules/@alethio/ui/src/styled-components.d.ts"
+  },
+  {
+    "revision": "ee9a50b81f25c4e2298ee308be095821",
+    "url": "../lib/node_modules/@alethio/ui/src/theme/ITheme.d.ts"
+  },
+  {
     "revision": "506e71de0e1b0d3efc855913dfae1b9f",
     "url": "../lib/src/ITheme.d.ts"
   },
@@ -210,6 +238,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b91fdbae0ae0c3da5b6a19f131e79a3",
     "url": "../lib/src/qrCode/QrCodeLayer.d.ts"
+  },
+  {
+    "revision": "2ecf7f7effe1298cb6b683f1283b8d0e",
+    "url": "../lib/src/sidebar/LogoContainer.d.ts"
+  },
+  {
+    "revision": "e64364af3aff9257cbd52051955f0c19",
+    "url": "../lib/src/sidebar/Sidebar.d.ts"
+  },
+  {
+    "revision": "bd33952137dbf70d1fa5a0fa3edba777",
+    "url": "../lib/src/sidebar/SidebarColumns.d.ts"
+  },
+  {
+    "revision": "77adeb24685804042efd75e6ed1ca3a3",
+    "url": "../lib/src/sidebar/SidebarPageTitle.d.ts"
   },
   {
     "revision": "3c14fe5a461a73addac436dd89c41a50",
