@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "@alethio/ui/lib/styled-components";
-import { Tooltip } from "@alethio/ui/lib/overlay/tooltip/Tooltip";
+import { TooltipBase } from "@alethio/ui/lib/overlay/tooltip/TooltipBase";
 import { Link } from "plugin-api/component/Link";
 import { BarChartItemBar } from "./BarChartItemBar";
 
@@ -45,7 +45,7 @@ export class BarChartItem extends React.Component<IBarChartItemProps> {
     render() {
         return (
             <BarChartItemRoot>
-                <Tooltip
+                <TooltipBase
                     placement="top"
                     nonInteractive
                     showDelay={0}
@@ -61,7 +61,7 @@ export class BarChartItem extends React.Component<IBarChartItemProps> {
                             </BarChartItemBarWrapper>
                         </BarChartItemHitBox>
                     </Link>
-                </Tooltip>
+                </TooltipBase>
             </BarChartItemRoot>
         );
     }
