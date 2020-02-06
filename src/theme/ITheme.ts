@@ -74,8 +74,10 @@ export interface IThemeColors extends IThemeBaseColors {
     payloadDataName: string;
     payloadDataType: string;
     payloadDataValue: string;
+    sidebarPageTitle: string;
 }
 export interface IThemeSpacing extends IThemeBaseSpacing {
     bubbleWrapperSize: number;
     identiconSize: number;
+    sidebarWidth: number;
 }

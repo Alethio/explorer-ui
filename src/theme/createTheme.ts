@@ -94,7 +94,8 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
     let spacing: IThemeSpacing = {
         ...baseTheme.spacing,
         bubbleWrapperSize: 24,
-        identiconSize: 74
+        identiconSize: 74,
+        sidebarWidth: 241
     };
 
     let media: IThemeMediaQueries = baseTheme.media;
