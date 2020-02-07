@@ -15,6 +15,7 @@ export const TxBubble: React.StatelessComponent<ITxBubbleProps> = ({ size, highl
                 size={size}
                 wrapperSize={theme.spacing.bubbleWrapperSize}
                 highlightThreshold={highlightThreshold}
+                highlightColor={theme.colors.txHighlightColorCode}
                 backgroundColor={theme.colors.txColorCode} />
         }
     </ThemeContext.Consumer>

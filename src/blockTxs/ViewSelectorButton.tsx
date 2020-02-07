@@ -1,7 +1,8 @@
 import styled from "../styled-components";
 import * as React from "react";
 
-const HEIGHT = 28;
+const HEIGHT = 32;
+const WIDTH = 40;
 interface IViewSelectorButtonProps {
     active?: boolean;
     className?: string;
@@ -12,15 +13,17 @@ const $ViewSelectorButton: React.StatelessComponent<IViewSelectorButtonProps> = 
 );
 export const ViewSelectorButton = styled($ViewSelectorButton)`
     height: ${HEIGHT}px;
-    width: ${HEIGHT}px;
+    width: ${WIDTH}px;
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-    padding: 1px;
+    padding: 3px 0 0 7px;
     border: 1px solid ${({active, theme}) => active ? theme.colors.txViewSelector : "transparent"};
+    background-color: ${({active, theme}) => active ? theme.colors.txViewSelector : "transparent"};
     color: ${({active, theme}) => active ? theme.colors.txViewSelectorActive : theme.colors.txViewSelector};
     &:hover {
         border: 1px solid ${({theme}) => theme.colors.txViewSelector};
+        background-color: ${({theme}) => theme.colors.txViewSelector};
         color: ${({theme}) => theme.colors.txViewSelectorActive};
     }
 `;

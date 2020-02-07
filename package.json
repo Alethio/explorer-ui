@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@alethio/cms": "github:Alethio/cms#remove-itheme",
-    "@alethio/ui": "^2.0.0-dev.7",
+    "@alethio/ui": "github:Alethio/ui#update-icons",
     "@storybook/addon-info": "^5.1.9",
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addon-storysource": "^5.1.9",
@@ -46,7 +46,7 @@
     "ts-loader": "^6.0.4",
     "tslib": "^1.9.3",
     "tslint": "^5.18.0",
-    "typescript": "^3.6.4",
+    "typescript": "^3.7.5",
     "typescript-plugin-styled-components": "^1.4.3",
     "typescript-styled-plugin": "^0.10.0",
     "typescript-tslint-plugin": "^0.1.0"
@@ -54,7 +54,7 @@
   "dependencies": {
     "@puzzl/browser": "^1.0.0-beta.1",
     "@puzzl/core": "^1.0.0-beta.1",
-    "bignumber.js": "^8.0.1",
+    "bignumber.js": "^8.1.1",
     "qrcode": "^1.2.2"
   },
   "peerDependencies": {

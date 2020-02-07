@@ -24,6 +24,7 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
 
         blockColorCode: BLUE,
         txColorCode: DARK,
+        txHighlightColorCode: DUSK,
         contractColorCode: ORANGE,
 
         blockListItem: DAWN_D5,
@@ -37,7 +38,7 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
         txBoxText: WHITE,
         cmBoxText: WHITE,
         txViewSelector: DAWN_D5,
-        txViewSelectorActive: DARK,
+        txViewSelectorActive: WHITE,
         minerLabelBg: WHITE,
         minerLabelText: BLUE,
         link: BLUE,
@@ -93,7 +94,7 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
 
     let spacing: IThemeSpacing = {
         ...baseTheme.spacing,
-        bubbleWrapperSize: 24,
+        bubbleWrapperSize: 32,
         identiconSize: 74,
         sidebarWidth: 241
     };

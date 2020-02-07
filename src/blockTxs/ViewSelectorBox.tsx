@@ -6,11 +6,11 @@ import { TxsViewMode } from "./TxsViewMode";
 import { ListViewIcon } from "@alethio/ui/lib/icon/ListViewIcon";
 import { GridViewIcon } from "@alethio/ui/lib/icon/GridViewIcon";
 
-const HEIGHT = 28;
+const HEIGHT = 32;
 const ViewSelectorRoot = styled.div`
     padding: 0 7px;
     display: flex;
-    width: ${2 * HEIGHT + 24}px;
+    width: ${2 * HEIGHT + 16}px;
     justify-content: space-between;
 `;
 

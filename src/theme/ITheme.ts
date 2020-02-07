@@ -21,6 +21,7 @@ export interface IThemeColors extends IThemeBaseColors {
     blockListItem: string;
     tooltipTxCountText: string;
     txColorCode: string;
+    txHighlightColorCode: string;
     txLogoBackground: string;
     txLogoText: string;
     txBoxText: string;
