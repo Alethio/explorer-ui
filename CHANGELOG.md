@@ -1,3 +1,8 @@
+# v1.0.0
+
+- Stable release
+- Add Sidebar and SidebarColumns components
+
 # v1.0.0-beta.2
 
 - Added TransferDirectionRenderer for Txs grid
