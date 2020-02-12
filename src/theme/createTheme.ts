@@ -1,4 +1,4 @@
-import { IThemeMediaQueries } from "@alethio/ui/lib/theme/ITheme";
+import { IThemeMediaQueries, IThemeFont } from "@alethio/ui/lib/theme/ITheme";
 import { createTheme as createBaseTheme } from "@alethio/ui/lib/theme/createTheme";
 import { ITheme, IThemeColors, IThemeSpacing } from "./ITheme";
 import { IPalette } from "@alethio/ui/lib/theme/IPalette";
@@ -10,98 +10,102 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
     let baseTheme = createBaseTheme(palette);
 
     let {
-        BLUE, DARK_GREY, EXTRA_LIGHT_GREY, GREEN, GREY, LIGHT_GREY,
-        MEDIUM_LIGHT_GREY, ORANGE, WHITE
+        BLUE, DARK, DAWN_L5, GREEN, DUSK, DAWN_D5,
+        DAWN, ORANGE, WHITE
     } = palette;
 
     let colors: IThemeColors = {
         ...baseTheme.colors,
-        toolbarBetaSign: LIGHT_GREY,
+        toolbarBetaSign: DAWN_D5,
         blockLogoBackground: BLUE,
         blockLogoText: WHITE,
-        txLogoBackground: DARK_GREY,
+        txLogoBackground: DARK,
         txLogoText: WHITE,
 
         blockColorCode: BLUE,
-        txColorCode: DARK_GREY,
+        txColorCode: DARK,
+        txHighlightColorCode: DUSK,
         contractColorCode: ORANGE,
 
-        blockListItem: LIGHT_GREY,
+        blockListItem: DAWN_D5,
         blockBoxText: WHITE,
-        addressHashBoxBg: LIGHT_GREY,
-        parentHashBoxBg: GREY,
+        addressHashBoxBg: DAWN_D5,
+        parentHashBoxBg: DUSK,
         parentHashBoxText: WHITE,
         unclesBoxBg: WHITE,
         unclesBoxBorder: BLUE,
         unclesBoxText: BLUE,
         txBoxText: WHITE,
         cmBoxText: WHITE,
-        txViewSelector: LIGHT_GREY,
-        txViewSelectorActive: DARK_GREY,
+        txViewSelector: DAWN_D5,
+        txViewSelectorActive: WHITE,
         minerLabelBg: WHITE,
         minerLabelText: BLUE,
         link: BLUE,
-        tooltipTxCountText: GREY,
+        tooltipTxCountText: DUSK,
 
         txTypeValue: GREEN,
         txTypeCreate: ORANGE,
-        txTypeCall: DARK_GREY,
-        txTypeBoxText: DARK_GREY,
+        txTypeCall: DARK,
+        txTypeBoxText: DARK,
         txTypeBoxBackground: WHITE,
 
-        txSidebarItem: LIGHT_GREY,
-        txSidebarItemActive: DARK_GREY,
-        identiconBorder: LIGHT_GREY,
-        accountTypeBoxText: DARK_GREY,
+        txSidebarItem: DAWN_D5,
+        txSidebarItemActive: DARK,
+        identiconBorder: DAWN_D5,
+        accountTypeBoxText: DARK,
         accountTypeBoxBackground: WHITE,
-        accountAliasBg: DARK_GREY,
+        accountAliasBg: DARK,
         accountAliasText: WHITE,
-        accountEthBalance: DARK_GREY,
+        accountEthBalance: DARK,
         accountBalanceChartStroke: BLUE,
-        accountBalanceChartRefStroke: LIGHT_GREY,
-        accountBalanceChartDisabledStroke: GREY,
-        accountBalanceChartFill: EXTRA_LIGHT_GREY,
+        accountBalanceChartRefStroke: DAWN_D5,
+        accountBalanceChartDisabledStroke: DUSK,
+        accountBalanceChartFill: DAWN_L5,
         accountBalanceChartOverlayBg: WHITE,
-        accountBalanceChartOverlayBorder: LIGHT_GREY,
+        accountBalanceChartOverlayBorder: DAWN_D5,
         accountBalanceChartSmallStroke: BLUE,
-        accountBalanceChartSmallFill: LIGHT_GREY,
+        accountBalanceChartSmallFill: DAWN_D5,
         accountPieChartFill: BLUE,
         accountPieChartBg: WHITE,
-        accountSymbolGrid: GREY,
-        qrCodeIcon: GREY,
-        qrCodeIconActive: DARK_GREY,
-        logEventsBorder: LIGHT_GREY,
+        accountSymbolGrid: DUSK,
+        qrCodeIcon: DUSK,
+        qrCodeIconActive: DARK,
+        logEventsBorder: DAWN_D5,
         logEventsSectionBg: WHITE,
         searchNoResultsText: BLUE,
-        readContractBorder: LIGHT_GREY,
+        readContractBorder: DAWN_D5,
         readContractSectionBg: WHITE,
-        readContractLabelBg: DARK_GREY,
+        readContractLabelBg: DARK,
         readInputBoxBg: WHITE,
-        readInputBoxBorder: MEDIUM_LIGHT_GREY,
-        readInputBoxText: DARK_GREY,
+        readInputBoxBorder: DAWN,
+        readInputBoxText: DARK,
         payloadBoxBg: WHITE,
-        payloadBoxBorder: LIGHT_GREY,
+        payloadBoxBorder: DAWN_D5,
         payloadDataName: BLUE,
-        payloadDataType: GREY,
-        payloadDataValue: DARK_GREY,
-        sidebarPageTitle: LIGHT_GREY,
-        privacyPolicyTableBorder: LIGHT_GREY,
-        cookieBannerBg: GREY,
-        privacyNameBg: DARK_GREY,
+        payloadDataType: DUSK,
+        payloadDataValue: DARK,
+        sidebarPageTitle: DAWN_D5,
+        privacyPolicyTableBorder: DAWN_D5,
+        cookieBannerBg: DUSK,
+        privacyNameBg: DARK,
         privacyNameText: WHITE
     };
 
     let spacing: IThemeSpacing = {
         ...baseTheme.spacing,
-        bubbleWrapperSize: 24,
-        identiconSize: 74
+        bubbleWrapperSize: 32,
+        identiconSize: 74,
+        sidebarWidth: 241
     };
 
-    let mediaQueries: IThemeMediaQueries = baseTheme.mediaQueries;
+    let media: IThemeMediaQueries = baseTheme.media;
+    let font: IThemeFont = baseTheme.font;
 
     return {
         colors,
         spacing,
-        mediaQueries
+        media,
+        font
     };
 };

@@ -3,7 +3,7 @@ import { IGridFieldRenderer } from "@alethio/ui/lib/control/grid/state/IGridFiel
 import styled from "@alethio/ui/lib/styled-components";
 import { MsgCountOutSmallIcon } from "@alethio/ui/lib/icon/MsgCountOutSmallIcon";
 import { MsgCountInSmallIcon } from "@alethio/ui/lib/icon/MsgCountInSmallIcon";
-import { TooltipRegular } from "@alethio/ui/lib/overlay/tooltip/TooltipRegular";
+import { Tooltip } from "@alethio/ui/lib/overlay/tooltip/Tooltip";
 import { ITranslation } from "plugin-api/ITranslation";
 
 let ICON_SIZE = 24;
@@ -35,17 +35,17 @@ export class TransferDirectionRenderer implements IGridFieldRenderer<IFromTo> {
 
         return <DirectionWrapper>
             { directionOut ?
-                <TooltipRegular
+                <Tooltip
                     content={this.tr.get("accountView.content.transferDirection.outgoing.tooltip")}
                 >
                     <MsgCountOutSmallIcon size={ICON_SIZE}/>
-                </TooltipRegular>
+                </Tooltip>
                  :
-                <TooltipRegular
+                <Tooltip
                     content={this.tr.get("accountView.content.transferDirection.incoming.tooltip")}
                 >
                     <MsgCountInSmallIcon size={ICON_SIZE} />
-                </TooltipRegular>
+                </Tooltip>
             }
         </DirectionWrapper>;
     }

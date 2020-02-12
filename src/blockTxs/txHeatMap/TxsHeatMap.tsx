@@ -77,7 +77,6 @@ export class TxsHeatMap extends React.Component<ITxsHeatMapProps> {
                     offset={8}
                     alignmentOffset={-8}
                     noFlip
-                    noArrow
                     referenceElement={() => this.rootEl}
                     content={<div onMouseEnter={this.handleTooltipEnter} onMouseLeave={this.handleTooltipLeave}>
                         { this.props.txTooltipThunk(this.hoveredTx!) }

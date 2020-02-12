@@ -17,7 +17,7 @@ const CookieBannerRoot = styled<ICookieBannerProps, "div">("div")`
     align-items: center;
     color: #FFFFFF;
 
-    @media ${(props) => props.theme.mediaQueries.breakPoints.smallerThanStandardView} {
+    @media ${(props) => props.theme.media.sAndBelow} {
         padding-left: 8px;
         padding-right: 8px;
     }
