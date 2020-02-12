@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/node_modules/@alethio/ui/src/layout/VerticalBar.d.ts"
   },
   {
-    "revision": "d8ba9c90f2264c4571b9f610b0602f5d",
+    "revision": "dd8b30188e7999cdb00e63159d20bd32",
     "url": "../lib/node_modules/@alethio/ui/src/layout/content/box/Box.d.ts"
   },
   {
@@ -106,18 +106,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "58576e6b86c40e31aebcbd3d7ef63213",
     "url": "../lib/src/blockTxs/txHeatMap/TxsHeatMapItems.d.ts"
-  },
-  {
-    "revision": "f165f33c0f55ce93306380b13c77e1f5",
-    "url": "../lib/src/blockTxs/txHighlight/HighlightFields.d.ts"
-  },
-  {
-    "revision": "7741236aa95a18fdc56896856fab7ae6",
-    "url": "../lib/src/blockTxs/txHighlight/TxHighlightSelector.d.ts"
-  },
-  {
-    "revision": "60704f4536d50c66546dff789a73af1f",
-    "url": "../lib/src/blockTxs/txHighlight/TxHighlightSelector.stories.d.ts"
   },
   {
     "revision": "be6e68bdc4aedb517b478ec3ee29606b",
@@ -316,59 +304,53 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/src/util/storage/IStorage.d.ts"
   },
   {
-    "url": "0.806662722e3b5374da54.bundle.js"
+    "url": "10.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "10.806662722e3b5374da54.bundle.js"
+    "url": "11.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "11.806662722e3b5374da54.bundle.js"
+    "url": "12.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "12.806662722e3b5374da54.bundle.js"
+    "url": "13.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "13.806662722e3b5374da54.bundle.js"
+    "url": "3.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "14.806662722e3b5374da54.bundle.js"
+    "url": "4.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "15.806662722e3b5374da54.bundle.js"
+    "url": "5.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "4.806662722e3b5374da54.bundle.js"
+    "url": "6.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "5.806662722e3b5374da54.bundle.js"
+    "url": "7.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "6.806662722e3b5374da54.bundle.js"
+    "url": "8.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "7.806662722e3b5374da54.bundle.js"
+    "url": "9.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "8.806662722e3b5374da54.bundle.js"
-  },
-  {
-    "url": "9.806662722e3b5374da54.bundle.js"
-  },
-  {
-    "revision": "556abbb46e1c6ebb2453ffefee6ae1f8",
+    "revision": "49bdfe87c11a24d77cbfd57949e52681",
     "url": "iframe.html"
   },
   {
-    "url": "main.806662722e3b5374da54.bundle.js"
+    "url": "main.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "runtime~main.806662722e3b5374da54.bundle.js"
+    "url": "runtime~main.8b345d91762aac898b10.bundle.js"
   },
   {
-    "url": "vendors~main.806662722e3b5374da54.bundle.js"
+    "url": "vendors~main.8b345d91762aac898b10.bundle.js"
   },
   {
-    "revision": "044a820474c7ebd1ab2e",
+    "revision": "b0ff87740ad2b68ca8f2",
     "url": "vendors~main.css"
   }
 ]);
