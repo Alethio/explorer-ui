@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled from "../styled-components";
+import styled from "../../styled-components";
 import { Sidebar } from "./Sidebar";
 import { LogoContainer } from "./LogoContainer";
 import { Spacer } from "@alethio/ui/src/layout/Spacer";

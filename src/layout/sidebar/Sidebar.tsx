@@ -1,7 +1,7 @@
 import * as React from "react";
-import styled, { withTheme } from "../styled-components";
+import styled, { withTheme } from "../../styled-components";
 import { VerticalBar } from "@alethio/ui/src/layout/VerticalBar";
-import { ITheme } from "../theme/ITheme";
+import { ITheme } from "../../theme/ITheme";
 
 const StyledVerticalBar = styled(VerticalBar)`
     padding-top: 38px;
