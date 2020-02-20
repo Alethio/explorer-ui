@@ -23,8 +23,8 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
         txLogoText: WHITE,
 
         blockColorCode: BLUE,
-        txColorCode: DARK,
-        txHighlightColorCode: DUSK,
+        txColorCode: DUSK,
+        txHighlightColorCode: DARK,
         contractColorCode: ORANGE,
 
         blockListItem: DAWN_D5,
@@ -37,7 +37,7 @@ export const createTheme: (palette: IPalette) => ITheme = (palette) => {
         unclesBoxText: BLUE,
         txBoxText: WHITE,
         cmBoxText: WHITE,
-        txViewSelector: DAWN_D5,
+        txViewSelector: DUSK,
         txViewSelectorActive: WHITE,
         minerLabelBg: WHITE,
         minerLabelText: BLUE,
