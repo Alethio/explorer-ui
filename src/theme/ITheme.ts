@@ -21,12 +21,13 @@ export interface IThemeColors extends IThemeBaseColors {
     blockListItem: string;
     tooltipTxCountText: string;
     txColorCode: string;
-    txHighlightColorCode: string;
+    txHeatmapBubble: {
+        normal: string;
+        highlight: string;
+    };
     txLogoBackground: string;
     txLogoText: string;
     txBoxText: string;
-    txViewSelector: string;
-    txViewSelectorActive: string;
     txTypeValue: string;
     txTypeCreate: string;
     txTypeCall: string;

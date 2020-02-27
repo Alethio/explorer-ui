@@ -8,7 +8,7 @@ interface ITimeInPoolBoxProps {
 }
 
 export const TimeInPoolBox: React.StatelessComponent<ITimeInPoolBoxProps> = ({ seconds, translation, colors }) => (
-    <ValueBox colors={colors}>
+    <ValueBox colors={colors} borderStyle="dashed">
         { translation.replace(/%d/, "" + seconds) }
     </ValueBox>
 );

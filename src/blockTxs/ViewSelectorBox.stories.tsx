@@ -5,5 +5,7 @@ import { TxsViewMode } from "./TxsViewMode";
 
 storiesOf("block txs/" + ViewSelectorBox.name, module)
     .add("default", () => (
-        <ViewSelectorBox txsViewMode={new TxsViewMode()} />
+        <div style={{backgroundColor: "#E6ECF5", padding: 10}}>
+            <ViewSelectorBox txsViewMode={new TxsViewMode()} />
+        </div>
     ));

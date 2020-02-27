@@ -29,11 +29,17 @@ export class ViewSelectorBox extends React.Component<IViewSelectorBoxProps> {
     render() {
         return (
             <ViewSelectorRoot>
-                <ViewSelectorButton active={this.props.txsViewMode.isTableList} onClick={this.onListClick}>
-                    <ListViewIcon />
-                </ViewSelectorButton>
-                <ViewSelectorButton active={this.props.txsViewMode.isHeatMapGrid} onClick={this.onGridClick}>
+                <ViewSelectorButton
+                    active={this.props.txsViewMode.isHeatMapGrid}
+                    onClick={this.onGridClick}
+                    borderRadiusPos="right">
                     <GridViewIcon />
+                </ViewSelectorButton>
+                <ViewSelectorButton
+                    active={this.props.txsViewMode.isTableList}
+                    onClick={this.onListClick}
+                    borderRadiusPos="left">
+                    <ListViewIcon />
                 </ViewSelectorButton>
             </ViewSelectorRoot>
         );
