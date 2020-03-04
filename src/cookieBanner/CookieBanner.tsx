@@ -4,7 +4,7 @@ import { Label } from "@alethio/ui/lib/data/Label";
 import { Button } from "@alethio/ui/lib/control/Button";
 import { StatusOkIcon } from "@alethio/ui/lib/icon/StatusOkIcon";
 import { observer } from "mobx-react";
-import { MoreInfoIcon } from "@alethio/ui/lib/icon/MoreInfoIcon";
+import { MoreVertIcon } from "@alethio/ui/lib/icon/MoreVertIcon";
 import { CookieBannerState } from "./CookieBannerState";
 import { IInternalNav, withInternalNav } from "plugin-api/withInternalNav";
 import { Link } from "plugin-api/component/Link";
@@ -95,7 +95,7 @@ class $CookieBanner extends React.Component<ICookieBannerProps & { internalNav: 
                         <Link to={`${privacyPolicyUri}#cookies`}>
                             <Button
                                 colors="primary"
-                                Icon={MoreInfoIcon}
+                                Icon={MoreVertIcon}
                             >
                                 { tr.moreInfo }
                             </Button>
