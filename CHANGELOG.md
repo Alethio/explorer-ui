@@ -1,3 +1,7 @@
+# Unreleased
+
+- (EthusdvalueBox): Add `EthusdvalueBox` component
+
 # v2.0.0-dev.0
 
 - (TimeInPoolBox): Update styling

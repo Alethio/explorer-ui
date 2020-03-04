@@ -21,6 +21,9 @@ import { TxTypeBox } from "./tx/TxTypeBox";
 import { UncleHashBox } from "./uncle/UncleHashBox";
 import { UncleNumberBox } from "./uncle/UncleNumberBox";
 import { AddressHashBox } from "./account/AddressHashBox";
+// tslint:disable-next-line:import-blacklist
+import BigNumber from "bignumber.js";
+import { EthUsdValueBox } from "./block/EthUsdValueBox";
 
 storiesOf("boxes", module)
     .addParameters({
@@ -76,6 +79,13 @@ storiesOf("boxes", module)
                 <LayoutRowItem>
                     <Label>Block size</Label>
                     <BlockSizeBox bytes={20000} locale="en-US" translations={{bytes: "bytes"}} />
+                </LayoutRowItem>
+            </LayoutRow>
+            <LayoutRow>
+                <LayoutRowItem>
+                    <Label>Eth to Usd values</Label>
+                    <EthUsdValueBox locale="en-US" wei={new BigNumber(1000456789000000000000)}  decimals={2}
+                        latestEthPrice={123} colors="highlight" />
                 </LayoutRowItem>
             </LayoutRow>
         </LayoutSection>
