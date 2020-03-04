@@ -4,8 +4,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/.storybook/config.d.ts"
   },
   {
-    "revision": "bcd468216f77865ff6d581f65f897acf",
+    "revision": "1e6b83983e0e84c82e257c614038cec6",
     "url": "../lib/node_modules/@alethio/ui/src/control/Button.d.ts"
+  },
+  {
+    "revision": "6d3724411b6d0a2e9e9a9aef9330d3e9",
+    "url": "../lib/node_modules/@alethio/ui/src/control/expander/ExpanderBase.d.ts"
+  },
+  {
+    "revision": "e3ab10f9b001a126cddbcfe35a969372",
+    "url": "../lib/node_modules/@alethio/ui/src/control/expander/ExpanderBaseIcon.d.ts"
+  },
+  {
+    "revision": "b3be40ec8c8295af8ff6775025df0bd3",
+    "url": "../lib/node_modules/@alethio/ui/src/data/Number.d.ts"
+  },
+  {
+    "revision": "abf4dee438a7157e9cdd402db4f08703",
+    "url": "../lib/node_modules/@alethio/ui/src/icon/ArrowDownIcon.d.ts"
   },
   {
     "revision": "2ac5553028d47d49aebec58544831e96",
@@ -48,8 +64,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/node_modules/@alethio/ui/src/styled-components.d.ts"
   },
   {
-    "revision": "ec9834d408f13504a81ab45235c0f5cc",
+    "revision": "0a4a2c151293e92b932cbec65c7b0666",
     "url": "../lib/node_modules/@alethio/ui/src/theme/ITheme.d.ts"
+  },
+  {
+    "revision": "f20ec6968e6422f001e43518a5bb71dd",
+    "url": "../lib/node_modules/@alethio/ui/src/util/BigNumber.d.ts"
+  },
+  {
+    "revision": "643afa48264cf940d190b4eae3eb30ab",
+    "url": "../lib/node_modules/@alethio/ui/src/util/internal/locale/BigNumberFormatter.d.ts"
+  },
+  {
+    "revision": "7a200a66742f8000fa82097748a538c7",
+    "url": "../lib/node_modules/@alethio/ui/src/util/internal/locale/NumberFormatter.d.ts"
+  },
+  {
+    "revision": "6179e75afbf4313976929215bcd937d4",
+    "url": "../lib/node_modules/@alethio/ui/src/util/internal/locale/numberFormat.d.ts"
   },
   {
     "revision": "114d0b218afded325fd1b0bb694aeaaa",
@@ -58,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "816b2dcfc14689d8175cb82b3eb63539",
     "url": "../lib/node_modules/@alethio/ui/src/util/react/HoverState.d.ts"
+  },
+  {
+    "revision": "ea1aea597848e8656387230568ed9686",
+    "url": "../lib/node_modules/@alethio/ui/src/util/react/SvgIcon.d.ts"
   },
   {
     "revision": "506e71de0e1b0d3efc855913dfae1b9f",
@@ -146,6 +182,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b28d6aa702d114a64d49875edf0d5aa0",
     "url": "../lib/src/box/block/BlockSizeBox.d.ts"
+  },
+  {
+    "revision": "51149d3b83700efc4e07543095730f3b",
+    "url": "../lib/src/box/block/EthUsdValueBox.d.ts"
   },
   {
     "revision": "afb26dcf3442ae68e0c0cd0653d24a91",
@@ -304,53 +344,53 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "../lib/src/util/storage/IStorage.d.ts"
   },
   {
-    "url": "10.121530bbbe5c70b406b7.bundle.js"
+    "url": "0.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "11.121530bbbe5c70b406b7.bundle.js"
+    "url": "10.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "12.121530bbbe5c70b406b7.bundle.js"
+    "url": "11.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "13.121530bbbe5c70b406b7.bundle.js"
+    "url": "12.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "3.121530bbbe5c70b406b7.bundle.js"
+    "url": "13.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "4.121530bbbe5c70b406b7.bundle.js"
+    "url": "4.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "5.121530bbbe5c70b406b7.bundle.js"
+    "url": "5.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "6.121530bbbe5c70b406b7.bundle.js"
+    "url": "6.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "7.121530bbbe5c70b406b7.bundle.js"
+    "url": "7.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "8.121530bbbe5c70b406b7.bundle.js"
+    "url": "8.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "9.121530bbbe5c70b406b7.bundle.js"
+    "url": "9.825b6f889a02269dca29.bundle.js"
   },
   {
-    "revision": "55a85bd16204b4f7b4fc24b8ae46bc41",
+    "revision": "146448f6e13d7e827140b9deea4fbf4e",
     "url": "iframe.html"
   },
   {
-    "url": "main.121530bbbe5c70b406b7.bundle.js"
+    "url": "main.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "runtime~main.121530bbbe5c70b406b7.bundle.js"
+    "url": "runtime~main.825b6f889a02269dca29.bundle.js"
   },
   {
-    "url": "vendors~main.121530bbbe5c70b406b7.bundle.js"
+    "url": "vendors~main.825b6f889a02269dca29.bundle.js"
   },
   {
-    "revision": "4d22015ced4c375072ea",
+    "revision": "558b43693cf871b1ef3f",
     "url": "vendors~main.css"
   }
 ]);
